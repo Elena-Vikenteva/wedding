@@ -1,0 +1,64 @@
+h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 49px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 41px;
+  text-align: center;
+  color: #333333;
+}
+
+h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: 1007px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.header {
+  align-items: center;
+  background: url("img/bgc.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 45pc;
+}
+
+.header_title {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+}
+
+.dws-menu ul {
+  display: flex;
+}
+
+/*# sourceMappingURL=style.css.map */
