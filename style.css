@@ -5,6 +5,8 @@ h1 {
   line-height: 49px;
   text-align: center;
   color: #FFFFFF;
+  margin: 0;
+  margin-top: 20rem;
 }
 
 h2 {
@@ -14,6 +16,7 @@ h2 {
   line-height: 41px;
   text-align: center;
   color: #333333;
+  margin: 0;
 }
 
 h3 {
@@ -59,6 +62,216 @@ body {
 
 .dws-menu ul {
   display: flex;
+}
+
+.salon {
+  background-color: black;
+  color: #FFFFFF;
+  padding: 10rem 25rem;
+  margin-top: 15rem;
+}
+
+.header_button {
+  width: 261px;
+  height: 51px;
+  margin-top: 50px;
+  background: #333333;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.header_block {
+  text-align: center;
+}
+
+.colection_title {
+  margin-top: 10rem;
+}
+.colection_title p {
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 140%;
+  color: #333333;
+}
+
+.buttons {
+  margin-top: 6rem;
+}
+
+.salon_lilte p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 140%;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.salon_text p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 140%;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.salon_button {
+  display: flex;
+  justify-content: center;
+}
+
+.salon_btn {
+  position: absolute;
+  width: 224px;
+  height: 51px;
+  background: #FFFFFF;
+  border: 1px solid #333333;
+  box-sizing: border-box;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-top: 6rem;
+}
+
+.salon_button {
+  display: flex;
+  justify-content: center;
+}
+
+.station_btn {
+  position: absolute;
+  width: 255px;
+  height: 51px;
+  background: #333333;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.station_categorites {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 6rem;
+}
+.station_categorites img {
+  max-width: 32rem;
+}
+
+.catecories {
+  margin-top: 5.5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.catecories img {
+  max-width: 32rem;
+}
+
+.futer_block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bloks h3 {
+  font-style: normal;
+  font-weight: 500;
+  text-align: start;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.catalog_card_blocks {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bloks {
+  max-width: 255px;
+  margin: 0;
+  margin-top: 6rem;
+}
+
+.card {
+  padding-top: 9.5rem;
+}
+.card img {
+  max-width: 280px;
+}
+
+.card_title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #333333;
+}
+
+h4 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  text-align: center;
+  color: #333333;
+  margin: 0;
+}
+
+.catalog_btn {
+  position: absolute;
+  width: 125px;
+  height: 41px;
+  background: #333333;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.catalog_block {
+  border-bottom: 1px solid #131313;
+}
+
+.btn {
+  position: absolute;
+  width: 227px;
+  height: 51px;
+  background: #333333;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-top: 9.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
