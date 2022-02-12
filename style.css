@@ -7,7 +7,7 @@ h1 {
   text-align: center;
   color: #FFFFFF;
   margin: 0;
-  margin-top: 10rem;
+  margin-top: 18rem;
 }
 
 h2 {
@@ -46,6 +46,11 @@ body {
   padding: 0 20px;
 }
 
+.account, .like {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+}
+
 .header {
   align-items: center;
   background: url("img/bgc.jpg");
@@ -57,12 +62,182 @@ body {
 
 .header_title {
   display: flex;
-  justify-content: space-between;
   padding-top: 25px;
 }
 
-.dws-menu ul {
+.navigation {
   display: flex;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+}
+
+.navigation__link {
+  padding: 0 12.5px;
+  list-style: none;
+}
+
+.navigation__link a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.search input {
+  margin: 0;
+  margin-bottom: 3px;
+  width: 281px;
+  color: #fff;
+  height: 29px;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type=search] {
+  color: #fff;
+}
+
+/* Установите стиль для всех кнопок */
+.popup {
+  background-color: rgba(76, 175, 80, 0);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Дополнительные стили для кнопки Отмена */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Центрируйте изображение и установите кнопку Закрыть */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 2px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Модальный (фон) */
+.modal {
+  display: none;
+  /* Скрыто по умолчанию */
+  position: fixed;
+  /* Оставаться на месте */
+  z-index: 1;
+  /* Сидеть на вершине */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Полная ширина */
+  height: 100%;
+  /* Полная высота */
+  overflow: auto;
+  /* Включите прокрутку, если это необходимо */
+  background-color: black;
+  /* Цвет запасной вариант  */
+  background-color: rgba(0, 0, 0, 0.4);
+  /*Черный с непрозрачностью */
+  padding-top: 60px;
+}
+
+/* Модальное содержание/бокс */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  /* 5% сверху, 15% снизу и по центру */
+  border: 1px solid #888;
+  width: 80%;
+  /* Может быть больше или меньше, в зависимости от размера экрана */
+}
+
+/* Кнопка закрытия (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Добавить анимацию масштабирования */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+/* Измените стили для кнопки span и cancel на очень маленьких экранах */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+
+  .cancelbtn {
+    width: 100%;
+  }
+}
+.form-input {
+  background: url(img/search.svg);
+  background-repeat: no-repeat;
+  width: 25%;
+  display: inline-block;
+  border-width: 0;
+  box-sizing: border-box;
+  background-color: #33333300;
+  padding-left: 43px;
+  margin-top: 10px;
 }
 
 .header_button {
@@ -98,6 +273,7 @@ body {
 
 .buttons {
   margin-top: 6rem;
+  margin-bottom: 5.5rem;
 }
 
 .salon_lilte p {
@@ -146,6 +322,7 @@ body {
 .salon_button {
   display: flex;
   justify-content: center;
+  margin-top: 1.5rem;
 }
 
 .station_btn {
@@ -162,6 +339,7 @@ body {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #FFFFFF;
+  margin-top: 6rem;
 }
 
 .station_categorites {
@@ -173,12 +351,11 @@ body {
   max-width: 32rem;
 }
 
-.catecories {
-  margin-top: 5.5rem;
+.catecories, .catecories_block {
   display: flex;
   flex-wrap: wrap;
 }
-.catecories img {
+.catecories img, .catecories_block img {
   max-width: 32rem;
 }
 
@@ -252,7 +429,6 @@ h4 {
   width: 125px;
   height: 41px;
   background: #333333;
-  border: 1px solid #FFFFFF;
   box-sizing: border-box;
   font-size: 18px;
   line-height: 21px;
@@ -260,10 +436,25 @@ h4 {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #FFFFFF;
+  border: none;
 }
 
-.catalog_block {
-  border-bottom: 1px solid #131313;
+.tovary_page p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 140%;
+  text-align: center;
+  color: black;
+}
+.tovary_page h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 41px;
+  text-align: center;
+  color: #333333;
+  margin: 0;
 }
 
 .btn {
@@ -330,12 +521,20 @@ h4 {
   margin-left: 2rem;
 }
 
-.salon_block_contacts {
+.block {
   display: flex;
 }
 
+.headers {
+  background-color: #333333;
+}
+
 input[type=search] {
-  color: rgba(51, 51, 51, 0.5);
+  color: white;
+}
+
+input[type=email] {
+  color: #000000;
 }
 
 input {
@@ -344,14 +543,14 @@ input {
 
 input[type=text]::-ms-clear {
   display: none;
-  ширина: 0;
-  высота: 0;
+  width: 0;
+  height: 0;
 }
 
 input[type=text]::-ms-reveal {
   display: none;
-  ширина: 0;
-  высота: 0;
+  width: 0;
+  height: 0;
 }
 
 input[type=search]::-webkit-search-decoration,
@@ -364,6 +563,11 @@ input[type=search]::-webkit-search-results-decoration {
 .search {
   width: 20rem;
   height: 4.5rem;
+  margin-left: 9.9rem;
+}
+
+.header_logo {
+  margin-left: 12.6rem;
 }
 
 .submit {
@@ -392,14 +596,15 @@ input[type=search]::-webkit-search-results-decoration {
   position: relative;
 }
 
-.tekst_sverhu_kartinki {
+.bottom-left {
   position: absolute;
-  left: 190px;
-  text-transform: uppercase;
-  color: white;
-  width: 154px;
-  padding: 10px;
+  top: 8px;
+  left: 50px;
+  margin-top: 22rem;
+  width: 20rem;
   text-align: center;
+  font-size: 21px;
+  line-height: 140%;
 }
 
 .header_brends {
@@ -503,6 +708,45 @@ input[type=search]::-webkit-search-results-decoration {
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {
   display: block;
+}
+
+.container {
+  position: relative;
+  color: white;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 100px;
+  margin-top: 20rem;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.bottom-center {
+  position: absolute;
+  top: 8px;
+  left: 100px;
+  margin-top: 5rem;
+  font-style: normal;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.soshial {
+  margin-top: 20rem;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -10,14 +10,22 @@
     <div class="wrapper">
 
         <div class="header_title">
-            <nav class="dws-menu">
 
-                <ul>
-                    <li><a href="#Skills"><i class=""></i>Главная</a></li>
-                    <li><a href="#Portfolio"><i class=""></i>Католог</a>
-                    <li><a href="#Video"><i class=""></i>Контакты</a></li>
+            <nav class="header__navigation">
+                <ul class="navigation">
+                    <li class="navigation__link">
+                        <a href=""><p>Главная</p></a>
+                    </li>
+                    <li class="navigation__link">
+                        <a href=""><p> Каталог </p></a>
+                    </li>
+                    <li class="navigation__link">
+                        <a href=""><p>Контакты</p> </a>
+                    </li>
                 </ul>
             </nav>
+
+
             <div class="header_logo">
                 <svg width="216" height="52" viewBox="0 0 216 52" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M44.5497 44.4793C39.5199 49.4931 33.3644 52 26.0832 52C18.8019 52 12.6224 49.4931 7.54471 44.4793C2.5149 39.4178 0 33.258 0 26C0 18.742 2.5149 12.6061 7.54471 7.59229C12.6224 2.53076 18.8019 0 26.0832 0C33.3644 0 39.5199 2.53076 44.5497 7.59229C49.6275 12.6061 52.1663 18.742 52.1663 26C52.1663 33.258 49.6275 39.4178 44.5497 44.4793ZM13.3649 38.8926C16.8139 42.2828 21.0533 43.978 26.0832 43.978C31.113 43.978 35.3284 42.2828 38.7295 38.8926C42.1785 35.4545 43.9031 31.157 43.9031 26C43.9031 20.843 42.1785 16.5693 38.7295 13.1791C35.3284 9.74105 31.113 8.02204 26.0832 8.02204C21.0533 8.02204 16.8139 9.74105 13.3649 13.1791C9.96381 16.5693 8.26326 20.843 8.26326 26C8.26326 31.157 9.96381 35.4545 13.3649 38.8926Z" fill="white"/>
@@ -28,16 +36,48 @@
                     <path d="M199.799 23.9329L199.793 23.8807C199.782 23.8154 199.762 23.7523 199.734 23.6936L196.793 18.423C196.793 18.423 196.418 17.9062 196.329 17.9062H183.795L180.026 23.5148L179.981 23.5665L179.975 23.5908C179.943 23.6477 179.917 23.7084 179.897 23.7717L179.882 23.8218C179.838 23.9822 179.84 24.1537 179.888 24.3127L179.905 24.3691C179.929 24.4357 179.958 24.4967 179.993 24.551L189.106 37.4017L189.124 37.4311C189.171 37.4983 189.228 37.5577 189.298 37.612L189.351 37.6487C189.403 37.6849 189.457 37.7138 189.536 37.7458L189.587 37.765C189.676 37.7903 189.754 37.8022 189.83 37.8022C189.906 37.8022 189.981 37.7908 190.082 37.7619L190.143 37.7376C190.204 37.7138 190.258 37.6844 190.324 37.6394L190.364 37.611C190.435 37.5557 190.491 37.4957 190.522 37.4487L199.646 24.5846C199.727 24.4647 199.78 24.3244 199.799 24.1763L199.806 24.1096L199.81 24.0569L199.799 23.9329ZM194.906 23.5908L196.205 20.9744L197.503 23.5908H194.906ZM194.127 25.1411H197.209L192.073 32.3838L194.127 25.1411ZM193.365 22.8063L191.489 19.9734H194.771L193.365 22.8063ZM187.356 25.1411H192.304L189.83 33.8628L187.356 25.1411ZM187.847 23.5908L189.83 20.5956L191.812 23.5908H187.847ZM186.451 22.5717L185.591 19.9734H188.171L186.451 22.5717ZM187.588 32.3843L182.451 25.1411H185.533L187.588 32.3843ZM184.104 20.9924L184.964 23.5908H182.384L184.104 20.9924Z" fill="white"/>
                 </svg>
             </div>
+
             <div class="header_title">
-                <ul>
-                    <li><a href="#Skills"><i class=""></i>Skills</a></li>
-                    <li><a href="#Portfolio"><i class=""></i>Portfolio</a>
-                    <li><a href="#Video"><i class=""></i>Video</a></li>
-                    <li><a href="#Price"><i class=""></i>Price</a></li>
-                    <li><a href="#Contacts"><i class=""></i>Contacts</a></li>
-                </ul>
+                <div class="search">
+                    <input class="form-input" type="search" id="name" name="" placeholder="Поиск" required="">
+                </div>
+
+                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto">Вход/Регистрация</button>
+
+                <div id="id01" class="modal">
+
+                    <form class="modal-content animate" action="../action_page.php" method="post">
+                        <div class="imgcontainer">
+                            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Закрыть Modal">&times;</span>
+                        </div>
+
+                        <div class="container">
+                            <label for="uname"><b>Имя пользователя</b></label>
+                            <input type="text" placeholder="Введите имя пользователя" name="uname" required>
+
+                            <label for="psw"><b>Пароль</b></label>
+                            <input type="password" placeholder=" Ведите пароль" name="psw" required>
+
+                            <button type="submit">Пользователь</button>
+                            <label>
+                                <input type="checkbox" checked="checked" name="remember"> Запомнить меня
+                            </label>
+                        </div>
+
+                        <div class="container" style="background-color:#f1f1f1">
+                            <button class="popup" type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Отменить</button>
+                            <span class="psw">Забыли <a href="#">пароль?</a></span>
+                        </div>
+                    </form>
+                </div>
             </div>
-        </div>
+        
+
+<button class="account"> <img src="img/account.svg" </button>
+ <button class="like"> <img src="img/like.svg" </button>
+
+            </div>
+       
 
         <div class="header_block">
             <h1> Долго, дорого, богато! </h1>
@@ -46,6 +86,9 @@
         </div>
 
         <div class="header_brends">
+
+
+
             <img src="img/Rectangle 2.png">
             <img src="img/Rectangle 2.png">
             <img src="img/Rectangle 2.png">
@@ -81,12 +124,49 @@
         </div>
 
         <div class="catecories">
-            <img src="img/Rectangle 5.jpg">
-            <img src="img/Rectangle 6.jpg">
-            <img src="img/Rectangle 7.jpg">
-            <img src="img/Rectangle 8.jpg">
-            <img src="img/Rectangle 9.jpg">
-            <img src="img/Rectangle 10.jpg">
+
+            <div class="container">
+              <img src="img/Rectangle 5.jpg" alt="Snow" style="width:100%;">
+
+             <div class="top-left">Кольца</div>
+            </div>
+
+                     <div class="container">
+                       <img src="img/Rectangle 6.jpg" alt="Snow" style="width:100%;">
+
+                      <div class="top-left">Cерьги</div>
+                     </div>
+
+
+            <div class="container">
+                <img src="img/Rectangle 7.jpg" alt="Snow" style="width:100%;">
+
+                <div class="top-left">Подвески</div>
+            </div>
+        </div>
+
+
+
+        <div class="catecories_block">
+
+            <div class="container">
+                <img src="img/Rectangle 8.jpg" alt="Snow" style="width:100%;">
+
+                <div class="top-left">Запонки</div>
+            </div>
+
+            <div class="container">
+                <img src="img/Rectangle 9.jpg" alt="Snow" style="width:100%;">
+
+                <div class="top-left">Браслеты</div>
+            </div>
+
+
+            <div class="container">
+                <img src="img/Rectangle 10.jpg" alt="Snow" style="width:100%;">
+
+                <div class="top-left">Часы</div>
+            </div>
         </div>
 
     </div>
@@ -116,8 +196,6 @@
         </div>
         </div>
         </div>
-    </div>
-    </div>
 </section>
 
 <section class="station">
@@ -128,23 +206,31 @@
         </div>
 
         <div class="station_card">
+
         <div class="station_categorites">
-            <img src="img/Rectangle 1.jpg">
 
-            <div id="tekst_sverhu_kartinki">
-                <div class="tekst_sverhu_kartinki">
-                    Как выбрать часы для своей будущей жены</div>
-
+            <div class="container">
+                <img src="img/Rectangle 1.jpg" alt="Snow" style="width:100%;">
+                <div class="bottom-left">Как выбрать часы для своей будущей жены</div>
             </div>
 
+            <div class="container">
+                <img src="img/Rectangle 2.jpg" alt="Snow" style="width:100%;">
+                <div class="bottom-left">Запонки для мужа: 7 ключевых правил покупки аксессуара</div>
+            </div>
+
+
+            <div class="container">
+                <img src="img/Rectangle 3.jpg" alt="Snow" style="width:100%;">
+                <div class="bottom-left">Как выбрать обручальные кольца молодоженам</div>
+            </div>
         </div>
 
-
+<div class="salon_button">
         <button class="station_btn"> читать наш блог </button>
-
+</div>
         </div>
         </div>
-    </div>
 </section>
 
 
@@ -156,15 +242,41 @@
         </div>
 
         <div class="station_categorites">
-            <img src="img/img--hover.jpg">
-            <img src="img/gallery__image.jpg">
-            <img src="img/gallery__image1.jpg">
 
-            <img src="img/gallery__image2.jpg">
-            <img src="img/gallery__image3.jpg">
+            <div class="container">
+                <img src="img/img--hover.jpg" alt="Snow">
+                <div class="bottom-center"> <img src="img/play-circle.svg"> </div>
+            </div>
 
 
-            <img src="img/Rectangle 0.jpg">
+            <div class="container">
+                <img src="img/gallery__image.jpg" alt="Snow" style="width:100%;">
+                <div class="bottom-center">  </div>
+            </div>
+
+            <div class="container">
+                <img src="img/gallery__image1.jpg" alt="Snow" style="width:100%;">
+                <div class="bottom-center">  </div>
+            </div>
+
+            <div class="container">
+                <img src="img/gallery__image2.jpg" alt="Snow" style="width:100%;">
+                <div class="bottom-center">  </div>
+            </div>
+
+
+            <div class="container">
+                <img src="img/gallery__image3.jpg" alt="Snow" style="width:100%;">
+                <div class="bottom-center">  </div>
+            </div>
+
+
+            <div class="container">
+                <img src="img/Rectangle 0.jpg" alt="Snow">
+                <div class="bottom-center"> <img src="img/play-circle.svg"> </div>
+            </div>
+
+
         </div>
 
     </div>
@@ -181,29 +293,29 @@
         </div>
 
         <div class="salon_block_contacts">
-
-            <div class="salon_block">
+<div class="salon_block_contact">
+<div class="block">
                 <img src="img/icon.svg">
                 <p>
                     Личный менеджер
                 </p>
-            </div>
+</div>
 
-            <div class="salon_block">
+            <div class="block">
                 <img src="img/icon.svg">
                 <p>
                     Доставка и оформление
                 </p>
             </div>
 
-
-            <div class="salon_block">
+            <div class="block">
                 <img src="img/icon.svg">
                 <p>
                     Индивидуальный дизайн
                 </p>
             </div>
-            </div>
+
+
 
             <div class="email_block">
 
@@ -212,14 +324,15 @@
 
                 <div class="form">
                 <form>
-                    <p><input class="search" type="search" name="q" placeholder="Ваш e-mail">
+                    <p><input class="search" type="email" name="q" placeholder="Ваш e-mail">
                         <input class="submit" type="submit" value="Отправить"></p>
                 </form>
             </div>
             </div>
         </div>
     </div>
-
+    </div>
+    </div>
 </section>
 
 
@@ -289,6 +402,6 @@
 
 </section>
 
-
+<script src="js.js"> </script>
 </body>
 </html>
