@@ -37,18 +37,21 @@
                 </svg>
             </div>
 
-            <div class="header_title">
+
+            <div class="header_search">
                 <div class="search">
                     <input class="form-input" type="search" id="name" name="" placeholder="Поиск" required="">
                 </div>
 
-                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto">Вход/Регистрация</button>
+                <div class="registration">
+                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Вход/Регистрация</button>
 
                 <div id="id01" class="modal">
 
                     <form class="modal-content animate" action="../action_page.php" method="post">
                         <div class="imgcontainer">
                             <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Закрыть Modal">&times;</span>
+                            <img src="img_avatar2.png" alt="Аватар" class="avatar">
                         </div>
 
                         <div class="container">
@@ -65,18 +68,20 @@
                         </div>
 
                         <div class="container" style="background-color:#f1f1f1">
-                            <button class="popup" type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Отменить</button>
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Отменить</button>
                             <span class="psw">Забыли <a href="#">пароль?</a></span>
                         </div>
                     </form>
                 </div>
             </div>
+
         
 
-<button class="account"> <img src="img/account.svg" </button>
- <button class="like"> <img src="img/like.svg" </button>
+<button class="account"> <img src="img/account.svg"> </button>
+ <button class="like"> <img src="img/like.svg"> </button>
 
             </div>
+        </div>
        
 
         <div class="header_block">
@@ -99,6 +104,7 @@
         
         
     </div>
+
 </section>
 
 <section class="colection">
@@ -175,7 +181,7 @@
 <section  class="salon">
     <div class="wrapper">
 
-        <div class="salon_block">
+        <div class="salon_blocks">
         <div class="salon_lilte">
             <p>Не знаете, что выбрать?</p>
             <h3>Посетите наши салоны в Москве </h3>
@@ -244,29 +250,29 @@
         <div class="station_categorites">
 
             <div class="container">
-                <img src="img/img--hover.jpg" alt="Snow">
+                <img src="img/img--hover.jpg" alt="Show" style="width:278px;">
                 <div class="bottom-center"> <img src="img/play-circle.svg"> </div>
             </div>
 
 
             <div class="container">
-                <img src="img/gallery__image.jpg" alt="Snow" style="width:100%;">
+                <img src="img/gallery__image.jpg" alt="Snow" style="width:278px;">
                 <div class="bottom-center">  </div>
             </div>
 
             <div class="container">
-                <img src="img/gallery__image1.jpg" alt="Snow" style="width:100%;">
+                <img src="img/gallery__image1.jpg" alt="Snow" style="width:278px;">
                 <div class="bottom-center">  </div>
             </div>
 
             <div class="container">
-                <img src="img/gallery__image2.jpg" alt="Snow" style="width:100%;">
+                <img src="img/gallery__image2.jpg" alt="Snow" style="width:278px;">
                 <div class="bottom-center">  </div>
             </div>
 
 
             <div class="container">
-                <img src="img/gallery__image3.jpg" alt="Snow" style="width:100%;">
+                <img src="img/gallery__image3.jpg" alt="Snow" style="width:278px;">
                 <div class="bottom-center">  </div>
             </div>
 
@@ -314,6 +320,7 @@
                     Индивидуальный дизайн
                 </p>
             </div>
+</div>
 
 
 
