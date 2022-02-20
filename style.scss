@@ -48,7 +48,6 @@ body{
 .wrapper{
   max-width: $content-width;
   margin: auto;
-  padding: 0 20px;
 }
 
 .account, .like {
@@ -67,7 +66,8 @@ body{
 
 .header_title{
   display: flex;
-  padding-top: 25px;
+  padding-top: 27px;
+  padding-bottom: 27px;
   align-items: center;
   justify-content: space-between;
 }
@@ -76,6 +76,7 @@ body{
   font-style: normal;
   font-weight: normal;
   font-size: 1.6rem;
+  margin-left: -5.5rem;
 }
 
 .navigation__link {
@@ -576,6 +577,8 @@ flex-wrap: wrap;
 
   input[type=email] {
     color: #000000;
+    height: 4rem;
+    width: 20rem;
   }
 
   input {outline:none;}
@@ -694,6 +697,8 @@ flex-wrap: wrap;
     line-height: 150%;
     border: none;
     cursor: pointer;
+    border-bottom: 2px solid #D6D6D6;
+    padding-bottom: 17px;
   }
 
 
@@ -704,7 +709,7 @@ flex-wrap: wrap;
   }
 
   /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
+  .dropdown-content, .dropdown-cont {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
@@ -792,7 +797,10 @@ margin-left: 2.5rem;
   }
 }
 .moree{
-  margin-top: 10rem;
+  margin-top: 28rem;
+}
+.dropdown img{
+  margin-left: 5rem;
 }
 .salon_block_contacts{
   display: flex;
@@ -808,7 +816,7 @@ margin-left: 2.5rem;
 }
 
 ul.breadcrumb {
-  padding: 10px 16px;
+  padding: 60px 16px;
   list-style: none;
 }
 ul.breadcrumb li {
@@ -840,26 +848,28 @@ ul.breadcrumb li a:hover {
   margin-left: -1.5rem;
   margin-top: 1.5rem;
   img{
-    max-width: 16rem;
-    padding: 15px;
+    max-width: 14.7rem;
+    padding-top:3rem;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }
 .product_card{
   img{
-    max-width: 54rem;
+    max-width: 50rem;
   }
 }
 .products_cards{
   display: flex;
 }
 .discription{
-  margin-left: 3rem;
+  margin-left: 2rem;
   border: 1px solid #D6D6D6;
 }
 
 .discription_block {
   border: 1px solid #D6D6D6;
-  margin: 1rem;
+  margin: 2rem;
 
   h2 {
     font-style: normal;
@@ -874,7 +884,8 @@ ul.breadcrumb li a:hover {
   .tovar{
     max-width: 46rem;
     margin-top: 3rem;
-    padding: 3rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
 .brend{
@@ -909,4 +920,41 @@ color: #333333;
 }
 .text{
   max-width: 54rem;
+}
+.bread_crumbs{
+  text-align: center;
+}
+.prise{
+  padding-left: 1.5rem;
+  p{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+ color: #333333;
+  }
+}
+.card_btn{
+  align-items: center;
+  width: 247px;
+  height: 41px;
+background: #F9F9F9;
+  border: 1px solid #333333;
+  margin-left: 15rem;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+ text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+color: #333333;
+}
+.btn_page{
+  display: flex;
+  padding-bottom: 2.5rem;
+}
+.moree_block, .tovary{
+  margin-top: 12rem;
 }

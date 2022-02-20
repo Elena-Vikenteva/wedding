@@ -46,7 +46,7 @@
                     </div>
 
                     <div class="registration">
-                        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Вход/Регистрация</button>
+                        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Вход / Регистрация</button>
 
                         <div id="id01" class="modal">
 
@@ -94,25 +94,28 @@
         <div class="dropdown">
             <button onclick="myFunction()" class="dropbtn">Бренд<img src="img/Polygon.svg"></button>
             <div id="myDropdown" class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+                <a href="#">Dolce & Gabanna</a>
+                <a href="#">Harry Winston</a>
+                <a href="#">Van Cleef & Arpels</a>
+                <a href="#">Graff</a>
+                <a href="#">Tiffany & Co.</a>
+                <a href="#">Piaget</a>
             </div>
         </div>
 
             <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn">Цена <img src="img/Polygon.svg"></button>
-                <div id="dropdown_prise" class="dropdown_prise">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
+                <button onclick="prise()" class="dropbtn">Цена <img src="img/Polygon.svg"></button>
+                <div id="dropdown_prise" class="dropdown-content">
+                    <a href="#">от 100</a>
+                    <a href="#">от 1000</a>
+                    <a href="#">от 5000</a>
                 </div>
             </div>
 
 
                 <div class="dropdown">
-                    <button onclick="myFunction()" class="dropbtn"> Для кого <img src="img/Polygon.svg"></button>
-                    <div id="dropdown_foryou" class="dropdown_foryou">
+                    <button onclick="forYou()" class="dropbtn"> Для кого <img src="img/Polygon.svg"></button>
+                    <div id="dropdown_foryou" class="dropdown-content">
                         <a href="#">Для неё</a>
                         <a href="#">Для него</a>
                         <a href="#">Для детей</a>
@@ -121,17 +124,20 @@
 
 
                     <div class="dropdown">
-                        <button onclick="myFunction()" class="dropbtn">Коллекция<img src="img/Polygon.svg"></button>
-                        <div id="dropdown_" class="dropdown_">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
+                        <button onclick="collection()" class="dropbtn">Коллекция<img src="img/Polygon.svg"></button>
+                        <div id="dropdown_" class="dropdown-content">
+                            <a href="#">Dolce & Gabanna</a>
+                            <a href="#">Harry Winston</a>
+                            <a href="#">Van Cleef & Arpels</a>
+                            <a href="#">Graff</a>
+                            <a href="#">Tiffany & Co.</a>
+                            <a href="#">Piaget</a>
                         </div>
                     </div>
 
                         <div class="dropdown">
-                            <button onclick="myFunction()" class="dropbtn">Сезон <img src="img/Polygon.svg"></button>
-                            <div id="dropdown_collection" class="dropdown_collection">
+                            <button onclick="sezon()" class="dropbtn">Сезон <img src="img/Polygon.svg"></button>
+                            <div id="dropdown_collection" class="dropdown-content">
                                 <a href="#">Лето</a>
                                 <a href="#">Осень</a>
                                 <a href="#">Весна</a>
@@ -140,8 +146,8 @@
                         </div>
 
                             <div class="dropdown">
-                                <button onclick="myFunction()" class="dropbtn">Событие <img src="img/Polygon.svg"></button>
-                                <div id="dropdown_sezon" class="dropdown_sezon">
+                                <button onclick="eve()" class="dropbtn">Событие <img src="img/Polygon.svg"></button>
+                                <div id="dropdown_sezon" class="dropdown-content">
                                     <a href="#">День рождение</a>
                                     <a href="#">Свадьба</a>
                                     <a href="#">День всех влюбленных</a>
@@ -335,7 +341,7 @@
 
                     <div class="form">
                         <form>
-                            <p><input class="search" type="email" name="q" placeholder="Ваш e-mail">
+                            <p><input class="email" type="email" name="q" placeholder="Ваш e-mail">
                                 <input class="submit" type="submit" value="Отправить"></p>
                         </form>
                     </div>

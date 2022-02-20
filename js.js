@@ -1,10 +1,28 @@
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
+// выпадающий список
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
+function prise() {
+    document.getElementById("dropdown_prise").classList.toggle("show");
+}
 
-// Close the dropdown menu if the user clicks outside of it
+function forYou() {
+    document.getElementById("dropdown_foryou").classList.toggle("show");
+}
+
+function collection() {
+    document.getElementById("dropdown_").classList.toggle("show");
+}
+
+function sezon() {
+    document.getElementById("dropdown_collection").classList.toggle("show");
+}
+
+function eve() {
+    document.getElementById("dropdown_sezon").classList.toggle("show");
+}
+
+
 window.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {
 
@@ -19,11 +37,11 @@ window.onclick = function(event) {
     }
 }
 
+var dropdowns = document.getElementsByClassName("dropdown-cont");
 
-////
+
+////модальное окно
 var modal = document.getElementById('id01');
-
-// When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
@@ -31,7 +49,7 @@ window.onclick = function(event) {
 }
 
 
-    ///
+    /// читать больше
     function button_more() {
         var dots = document.getElementById("dots");
         var moreText = document.getElementById("more");
